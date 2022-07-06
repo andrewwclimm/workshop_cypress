@@ -1,10 +1,11 @@
 //let,var,const 
-
+let  z =0 
 export const myFirstMethod = () => {
 //cy.commands 
     let x = 5
     let y = 3
         if(x==5) {
+            console.log('javascript')
             console.log(x)
             console.log(y)
         }
@@ -12,7 +13,10 @@ export const myFirstMethod = () => {
             console.log(y)
             console.log(x)
         }
-    let i =0
+
+
+        
+    let i = 0
         for (i=1;i<=x;i++) {
             console.log(y)
             console.log(x)
@@ -24,6 +28,13 @@ export const myLastMethod = () =>{
     console.log(c)
 }
 
+
+export let myNewMethod = () => {
+
+}
+
+myFirstMethod()
+//myNewMethod()
 
 // export default {myFirstMethod,myLastMethod,myThirdMethod}
 
