@@ -7,6 +7,10 @@ context('suite of tests',()=>{
         cypressMethods.writeEmail()
         cypressMethods.verifyPasswordLabel()
         cypressMethods.typePassword()
+        cypressMethods.pressOnTogglePopup()
+        cypressMethods.goOnUtilities()
+        cypressMethods.verifyElementOnUtilities()
+        cypressMethods.scrollToLastElementOnPage()
     })
 })
 
