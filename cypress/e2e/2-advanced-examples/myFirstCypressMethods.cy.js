@@ -4,6 +4,8 @@ import togglePopup from './myWebActions.cy.js'
 const visitExampleSite =() => {
    // cy.setCookie('myCookie','valueCookie')
     cy.visit('https://example.cypress.io/commands/actions')
+
+    //https://fitfoodway.ro/
 }
 
 const writeEmail = () => {
