@@ -1,4 +1,4 @@
-let subscriptionPopup = '[onclick="inchidePopup(1)4"]'
+let subscriptionPopup = '[onclick="inchidePopup(1)"]'
 
 export default {
     subscriptionPopup,
