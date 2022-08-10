@@ -6,8 +6,10 @@ describe('suite of food site tests',()=>{
         
     })
 
-    it('first food site test',()=>{
-        foodSite.cancelSubscriptionPopup()
+    it('complete contact request form',()=>{
+        foodSite.pressOnContact()
+        foodSite.fillInputInformation()
+        foodSite.checkAgreement()
     })
 
     // it('second food site test',()=>{
