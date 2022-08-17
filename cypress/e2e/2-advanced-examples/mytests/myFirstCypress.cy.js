@@ -1,4 +1,4 @@
-import cypressMethods from './myFirstCypressMethods.cy.js'
+import cypressMethods from '../myFirstCypressMethods.cy.js'
 
 context('suite of tests',()=>{
 

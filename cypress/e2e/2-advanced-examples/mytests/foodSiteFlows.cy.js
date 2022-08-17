@@ -1,4 +1,4 @@
-import foodSite from './foodSiteMethods.cy.js'
+import foodSite from '../foodSiteMethods.cy.js'
 describe('suite of food site tests',()=>{ 
 
     beforeEach(() => { 

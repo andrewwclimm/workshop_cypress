@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-10T07:55:05.400Z",
+    "end": "2022-08-10T07:55:09.125Z",
+    "duration": 3725,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2e163317-0ec7-4f4a-9a77-0053a0d1c5dd",
+      "title": "",
+      "fullFile": "cypress/e2e/2-advanced-examples/mytests/myFirstCypress.cy.js",
+      "file": "cypress/e2e/2-advanced-examples/mytests/myFirstCypress.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2481caca-53f1-456c-acc4-8ba2e1d89953",
+          "title": "suite of tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "my first cypress test",
+              "fullTitle": "suite of tests my first cypress test",
+              "timedOut": null,
+              "duration": 2517,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_myFirstCypressMethodsCy.default.visitExampleSite();\n_myFirstCypressMethodsCy.default.writeEmail();\n_myFirstCypressMethodsCy.default.verifyPasswordLabel();\n_myFirstCypressMethodsCy.default.typePassword();\n_myFirstCypressMethodsCy.default.pressOnTogglePopup();\n_myFirstCypressMethodsCy.default.goOnUtilities();\n_myFirstCypressMethodsCy.default.verifyElementOnUtilities();\n_myFirstCypressMethodsCy.default.scrollToLastElementOnPage();",
+              "err": {},
+              "uuid": "c25f8d62-6742-4086-98f5-22da097d6507",
+              "parentUUID": "2481caca-53f1-456c-acc4-8ba2e1d89953",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c25f8d62-6742-4086-98f5-22da097d6507"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2517,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "html": false,
+        "json": true,
+        "overwrite": false,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
