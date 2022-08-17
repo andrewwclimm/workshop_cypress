@@ -1,7 +1,46 @@
 import popups from './foodSiteHomePopups.cy.js'
 
 const visitFoodSite = (visitationSite) => {
+    cy.clearCookies()
+    cy.clearLocalStorage()
     cy.visit(`${visitationSite}`)
+
+    cy.setCookie('fakeCookie1', '123ABC')
+   cy.viewport('iphone-6')
+   cy.viewport('samsung-note9')
+
+    cy.getCookie('session_id')
+      //  .should('have.property', 'value', '189jd09su')
+        .then((cookie) => {
+    // cookie is an object with "domain", "name" and other properties
+    cookie.should('have.value','value')
+
+
+    cy.getCookies()
+    .should('have.length', 4)
+    .then((cookies) => {
+      expect(cookies[1]).to.have.property('name', '_fbp')
+    })
+
+    cy.getCookies()
+    .should('have.length', 4)
+    .then((cookies) => {
+      expect(cookies[2]).to.have.property('name', 'tk_lr')
+    })
+
+    cy.getCookies()
+    .should('have.length', 4)
+    .then((cookies) => {
+      expect(cookies[3]).to.have.property('name', 'tk_r3d')
+    })
+
+    cy.getCookies()
+    .should('have.length', 4)
+    .then((cookies) => {
+      expect(cookies[4]).to.have.property('name', 'tk_or')
+    })
+})
+
 }
 
 const cancelSubscriptionPopup = () =>{
