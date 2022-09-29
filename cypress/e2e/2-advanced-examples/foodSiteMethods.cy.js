@@ -6,8 +6,8 @@ const visitFoodSite = (visitationSite) => {
     cy.visit(`${visitationSite}`)
 
     cy.setCookie('fakeCookie1', '123ABC')
-   cy.viewport('iphone-6')
-   cy.viewport('samsung-note9')
+    cy.viewport('iphone-6')
+    cy.viewport('samsung-note9')
 
     cy.getCookie('session_id')
       //  .should('have.property', 'value', '189jd09su')

@@ -1,14 +1,13 @@
 const { defineConfig } = require("cypress");
 const cucumber = require('cypress-cucumber-preprocessor').default
 
-
 module.exports = defineConfig({
   e2e: {
     "retries": 1,
     baseUrl: 'https://iasi.littlehanoi.ro/',
     viewportHeight: 660,
     viewportWidth: 1000,
-  //  specPattern: 'e2e/2-advanced-examples/mytests/*.feature',
+    specPattern: 'e2e/**/*.feature',
     reporter: 'mochawesome',
     reporterOptions: {
       html: false,
